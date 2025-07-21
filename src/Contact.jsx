@@ -18,8 +18,10 @@ export default function Contact() {
       }}
     >
       <h1>📞 Contact Page</h1>
+
       <form
         onSubmit={handleSubmit}
+        action="javascript:void(0);"
         style={{
           display: "flex",
           flexDirection: "column",
@@ -35,6 +37,7 @@ export default function Contact() {
             padding: "10px",
             borderRadius: "5px",
             border: "1px solid gray",
+            fontSize: "16px",
           }}
         />
         <input
@@ -45,6 +48,7 @@ export default function Contact() {
             padding: "10px",
             borderRadius: "5px",
             border: "1px solid gray",
+            fontSize: "16px",
           }}
         />
         <button
@@ -56,12 +60,15 @@ export default function Contact() {
             border: "none",
             borderRadius: "5px",
             cursor: "pointer",
+            fontSize: "16px",
           }}
         >
           Submit
         </button>
       </form>
+
       <br />
+
       <Link to="/">
         <button
           style={{
@@ -71,6 +78,7 @@ export default function Contact() {
             background: "white",
             color: "#007BFF",
             cursor: "pointer",
+            fontSize: "16px",
           }}
         >
           Back to Home
